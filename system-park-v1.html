@@ -158,7 +158,7 @@
                 .then(response => response.text())
                 .then(data => {
                     let currentDateTime = new Date().toLocaleString();
-                    showStatus(`Check-in realizado com sucesso!\nNome: ${userName}\nID da Credencial: ${userId}\nData: ${currentDateTime}`, "success");
+                    showStatus(`Check-in realizado com sucesso!\nRealizado por: ${userName}\nID da Credencial: ${userId}\nData: ${currentDateTime}`, "success");
                     clearFields();
                 })
                 .catch(error => {
